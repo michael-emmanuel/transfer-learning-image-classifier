@@ -19,7 +19,7 @@ An end-to-end Computer Vision pipeline featuring a CNN (ResNet18) trained on a n
 
 Send a POST request to `/predict` with an image file to receive a classification label.
 
-## Example Curl Request
+## Example Curl POST request
 
 ```
   curl -X 'POST' \
