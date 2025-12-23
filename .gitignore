@@ -1,0 +1,45 @@
+# --- Python environment ---
+__pycache__/
+*.py[cod]
+*$py.class
+.env
+.venv
+env/
+venv/
+bin/
+lib/
+develop-eggs/
+dist/
+eggs/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+
+# --- Jupyter Notebooks ---
+.ipynb_checkpoints
+
+# --- Data and Models (Crucial for ML) ---
+data/
+models/*.pth
+models/*.h5
+models/*.onnx
+*.zip
+*.tar.gz
+*.csv
+*.jsonl
+
+# --- Logs and Visualizations ---
+logs/
+.tensorboard/
+runs/
+wandb/
+mlruns/
+
+# --- OS and Editors ---
+.DS_Store
+.vscode/
+.idea/
+*.swp
