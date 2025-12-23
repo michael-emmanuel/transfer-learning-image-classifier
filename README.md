@@ -28,3 +28,9 @@ Send a POST request to `/predict` with an image file to receive a classification
   -H 'Content-Type: multipart/form-data' \
   -F 'file=@/path/to/Plastic_914.jpg'
 ```
+
+## API Result
+
+```
+{"prediction":"Glass"}
+```
