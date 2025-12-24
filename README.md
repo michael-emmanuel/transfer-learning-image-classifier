@@ -26,7 +26,7 @@ Send a POST request to `/predict` with an image file to receive a classification
   '127.0.0.1:8000/predict' \
   -H 'accept: application/json' \
   -H 'Content-Type: multipart/form-data' \
-  -F 'file=@/path/to/Plastic_914.jpg'
+  -F 'file=@/path/to/image.jpg'
 ```
 
 ## API Result
