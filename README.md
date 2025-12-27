@@ -12,6 +12,10 @@ An end-to-end Computer Vision pipeline featuring a CNN (ResNet18) trained on a n
 
 1. Install dependencies: `pip install -r requirements.txt`
 2. Place your dataset in `data/train/` (organized by folders per class).
+
+- Update `categories` list inside `app.py` to reflect classes.
+- [kaggle garbage classification](https://www.kaggle.com/datasets/mostafaabla/garbage-classification)
+
 3. Run `python src/train.py` to train and save the weights.
 4. Start the API: `uvicorn src.app:app --reload`
 
