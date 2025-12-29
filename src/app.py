@@ -4,14 +4,20 @@ import torch.nn as nn
 from torchvision import models, transforms
 from PIL import Image
 import io
+import wandb
 
 app = FastAPI(title="Waste Classifier API")
 
 # Load model architecture and weights
 def load_model():
+    # Log that this specific API instance started
+    wandb.init(project="waste-classification", job_type="api-runtime")
+    
     model = models.resnet18()
     num_ftrs = model.fc.in_features
-    model.fc = nn.Linear(num_ftrs, 4) # Assuming 4 classes
+    model.fc = nn.Linear(num_ftrs, 4)
+    
+    # Load from the local path used in train.py
     model.load_state_dict(torch.load("models/waste_resnet_v1.pth"))
     model.eval()
     return model
