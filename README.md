@@ -11,10 +11,10 @@ An end-to-end Computer Vision pipeline featuring a CNN (ResNet18) trained on a n
 
 ## Setup
 
-1. Virtual Environment: python3 -m venv venv & source venv/bin/activate
-2. Dependencies: pip install -r requirements.txt
-3. W&B Login: Run wandb login to connect your machine to your W&B account.
-4. Data Preparation: Place images in data/train/ with one folder per class (e.g., /glass/, /paper/).
+1. Virtual Environment: `python3 -m venv venv` & `source venv/bin/activate`
+2. Dependencies: `pip install -r requirements.txt`
+3. W&B Login: Run `wandb login` to connect your machine to your W&B account.
+4. Data Preparation: Place images in `data/train/` with one folder per class (e.g., /glass/, /paper/).
 5. Experiment Tracking & Training
 6. Run the training script to start a tracked session:
 
